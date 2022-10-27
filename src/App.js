@@ -1,5 +1,5 @@
 import "./App.css";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import { useContext, useEffect } from "react";
 import { AnyContext } from "./store/globalContext/AnyContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -10,7 +10,7 @@ function App() {
   const [anyState, setAnyState] = useContext(AnyContext);
 
   useEffect(() => {
-    console.log("aaa");
+    console.log('');
   }, []);
 
   return (
@@ -25,16 +25,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      {/* <Button
-        className="single-button"
-        onClick={() => {
-          console.log("aaa");
-        }}
-        variant="contained"
-        color="primary"
-      >
-        {anyState}
-      </Button> */}
+      
     </>
   );
 }

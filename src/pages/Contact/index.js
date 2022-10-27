@@ -1,17 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import DynamicButton from "../../components/Button/Button";
+// import DynamicButton from "../components/Button/Button";
 const Contact = () => {
   const navigate = useNavigate();
 
   return (
     <div>
-      Contact
-      <button
+      <DynamicButton
         onClick={() => {
           navigate("/");
         }}
-      >lets Go to home</button>
+        title={"button"}
+      />
     </div>
   );
 };
